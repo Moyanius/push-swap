@@ -1,0 +1,23 @@
+make --dry-run --keep-going --print-directory
+make: Entering directory `/System/Volumes/Data/sgoinfre/goinfre/Perso/jmoyano-/42 curso/push_swap'
+gcc -Werror -Wall -Wextra   -c -o push_swap.o push_swap.c
+ 
+gcc -Werror -Wall -Wextra   -c -o checkers.o checkers.c
+gcc -Werror -Wall -Wextra   -c -o error.o error.c
+gcc -Werror -Wall -Wextra   -c -o filler.o filler.c
+gcc -Werror -Wall -Wextra   -c -o list_act.o list_act.c
+gcc -Werror -Wall -Wextra   -c -o mount_board.o mount_board.c
+gcc -Werror -Wall -Wextra   -c -o ordering_actions.o ordering_actions.c
+gcc -Werror -Wall -Wextra   -c -o orders.o orders.c
+gcc -Werror -Wall -Wextra   -c -o orders2.o orders2.c
+gcc -Werror -Wall -Wextra   -c -o searchers.o searchers.c
+gcc -Werror -Wall -Wextra   -c -o sort_selector.o sort_selector.c
+gcc -Werror -Wall -Wextra   -c -o sorters.o sorters.c
+gcc -Werror -Wall -Wextra   -c -o num_sort.o num_sort.c
+gcc -Werror -Wall -Wextra   -c -o radix_sort_utils.o radix_sort_utils.c
+gcc -Werror -Wall -Wextra   -c -o sorting_algo.o sorting_algo.c
+gcc -Werror -Wall -Wextra   -c -o smart_selector_big.o smart_selector_big.c
+make -C ./Moyano_library
+gcc -Werror -Wall -Wextra push_swap.o checkers.o error.o filler.o list_act.o mount_board.o ordering_actions.o orders.o orders2.o searchers.o sort_selector.o sorters.o num_sort.o radix_sort_utils.o sorting_algo.o smart_selector_big.o -I ./Moyano_library -L ./Moyano_library -l ft -o push_swap
+make: Leaving directory `/System/Volumes/Data/sgoinfre/goinfre/Perso/jmoyano-/42 curso/push_swap'
+ 
