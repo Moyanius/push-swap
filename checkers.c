@@ -6,7 +6,7 @@
 /*   By: jmoyano- <jmoyano-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/23 14:15:37 by jmoyano-          #+#    #+#             */
-/*   Updated: 2022/08/22 19:10:46 by jmoyano-         ###   ########.fr       */
+/*   Updated: 2022/08/22 19:32:59 by jmoyano-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,7 +41,7 @@ int	check_int(char *argv)
 	long	tmp;
 
 	tmp = ft_atoll(argv);
-	if (tmp >= INT_MAX && tmp <= INT_MIN && ft_strlen(argv) < 12)
+	if (tmp >= INT_MAX || tmp <= INT_MIN)
 		return (1);
 	return (0);
 }
